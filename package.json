@@ -1,0 +1,22 @@
+{
+  "name": "e2e-testing-demo-20251105",
+  "version": "1.0.0",
+  "description": "とことんDevOps勉強会_202511回で使用",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismt7/e2e-testing-demo-20251105.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ismt7/e2e-testing-demo-20251105/issues"
+  },
+  "homepage": "https://github.com/ismt7/e2e-testing-demo-20251105#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.0"
+  }
+}
