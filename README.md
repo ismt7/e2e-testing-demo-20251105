@@ -13,6 +13,36 @@
 npx playwright test
 ```
 
+## React 開発用アプリ (ローカルログインデモ)
+
+このリポジトリには簡単な React (Vite) 製のログイン画面が `app/` にあります。画面は日本語表記です。Playwright の E2E テストはこのローカルアプリに対して動作するようになっています。
+
+1. 依存をインストール:
+
+```bash
+npm install
+```
+
+2. アプリを起動（Vite、デフォルトはポート 5173）:
+
+```bash
+npm start
+```
+
+3. 別ターミナルで Playwright テストを実行:
+
+```bash
+npm run test:e2e
+```
+
+ログインのサンプル資格情報:
+
+- username: `admin`
+- password: `pass`
+
+Playwright のテストは `tests/login.spec.ts` に入っています。
+
+
 - Playwright のインタラクティブ UI モードで起動（テストを選んで実行・デバッグできます）:
 
 ```bash

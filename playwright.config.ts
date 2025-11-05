@@ -33,20 +33,15 @@ export default defineConfig({
   },
 
   /* Configure projects for major browsers */
+  // Restrict tests to Google Chrome only. This uses the locally installed
+  // Chrome binary via the `channel: 'chrome'` option.
   projects: [
     {
+      // Keep the conventional project name 'chromium' so worker processes
+      // that expect the default project names continue to work, but use the
+      // Chrome channel to run tests with Google Chrome.
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
-
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     },
 
     /* Test against mobile viewports. */
